@@ -15,6 +15,7 @@
 - php artisan migrate
 - php artisan db:seed
 - php artisan db:seed --class=SurveySeeder
+- php artisan db:seed --class=Sec1Seeder
 
 4. Optimize
 

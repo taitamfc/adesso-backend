@@ -99,4 +99,11 @@ Route::group([
     Route::group(['prefix' => 'dashboards'], function () {
         Route::get('/', [DashboardController::class, 'show'])->name('api.dashboards.show');
     });
+
+    // Journal
+    Route::apiResource('journals',JournalController::class);
+    // Journey
+    Route::apiResource('journeys',JourneyController::class);
+    // JourneyArticle
+    Route::apiResource('journey_articles',JourneyArticleController::class);
 });
